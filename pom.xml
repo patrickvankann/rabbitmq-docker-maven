@@ -54,8 +54,8 @@
 					<autoPull>true</autoPull>
 					<images>
 						<image>
-							<alias>${project.artifactId}-rabbitmq</alias>
-							<name>${project.artifactId}/${project.artifactId}-rabbitmq:${project.version}</name>
+							<alias>rabbitmq</alias>
+							<name>eusashead/rabbitmq:${project.version}</name>
 							<build>
 								<dockerFileDir>rabbitmq</dockerFileDir>
 								<tags>

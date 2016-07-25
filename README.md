@@ -27,3 +27,8 @@ This is bound to the post-integration-test phase to shut the image down after th
 
 Maven Failsafe plugin is used to execute a basic pub/sub scenario over TCP and websocket to verify that the broker is working. The tests are in scr/test/java/net/eusashead/rabbitmq/SyncPubSubITCase.java.
 
+##Docker Hub
+The image is uploaded to [Dockerhub](https://hub.docker.com/r/eusashead/rabbitmq/).
+
+It should be possible to pull the image directly using 
+> docker pull eusashead/rabbitmq

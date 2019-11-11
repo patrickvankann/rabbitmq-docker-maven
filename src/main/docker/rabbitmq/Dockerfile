@@ -1,10 +1,4 @@
-FROM rabbitmq:3.6.3
-
-RUN apt-get update
-
-RUN apt-get install -y curl
-
-RUN curl http://www.rabbitmq.com/community-plugins/v3.6.x/rabbitmq_web_mqtt-3.6.x-3b6a09bb.ez > $RABBITMQ_HOME/plugins/rabbitmq_web_mqtt-3.6.x-3b6a09bb.ez
+FROM rabbitmq:3.8.1
 
 RUN rabbitmq-plugins enable --offline rabbitmq_management
 RUN rabbitmq-plugins enable --offline rabbitmq_mqtt

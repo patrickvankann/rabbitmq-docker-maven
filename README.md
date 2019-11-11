@@ -2,7 +2,7 @@
 Creates a Rabbitmq Docker image with the rabbitmq_web_mqtt plugin enabled using the Fabric8 Docker Maven Plugin.
 
 ## Rabbitmq configuration
-Rabbitmq Dockerfile is based on the standard rabbitmq:3.6.3 tag. However, it also installs curl and downloads the optional rabbitmq_web_mqtt plugin to the Rabbitmq plugins director. It also enables that plugin as well as the standard rabbitmq_mqtt and rabbitmq_management using the rabbitmq-plugins CLI.
+Rabbitmq Dockerfile is based on the standard rabbitmq:3.8.1 tag. It enables the rabbitmq_web_mqtt plugin as well as the standard rabbitmq_mqtt and rabbitmq_management using the rabbitmq-plugins CLI.
 
 The TCP ports that are exposed are:
 1. 15672: The web UI for the management console 
